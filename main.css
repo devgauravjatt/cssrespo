@@ -1,0 +1,78 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+  font-family: 'Boogaloo', cursive;
+  background-image: linear-gradient(
+  55deg,
+  hsl(240deg 100% 20%) 0%,
+  hsl(281deg 100% 19%) 6%,
+  hsl(307deg 100% 19%) 14%,
+  hsl(323deg 100% 23%) 21%,
+  hsl(334deg 100% 26%) 29%,
+  hsl(341deg 100% 28%) 37%,
+  hsl(347deg 100% 30%) 45%,
+  hsl(7deg 80% 33%) 54%,
+  hsl(23deg 100% 30%) 62%,
+  hsl(32deg 100% 29%) 71%,
+  hsl(41deg 100% 28%) 80%,
+  hsl(51deg 100% 26%) 90%,
+  hsl(63deg 100% 25%) 100%
+);
+background-size: cover;
+background-repeat: no-repeat;
+height: 1200px;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #662d91bd;
+}
+
+ul{
+    display: flex;
+    width: 85%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    color: azure;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+li{
+    list-style: none;
+}
+
+nav img{
+    height: 70%;
+    margin-left: 2%;
+}
+
+li:hover a{
+    font-size: 23px;
+}
+
+body:hover{
+    background-color: rgb(34, 27, 27);
+    background-image: none;
+}
+
+
+button{
+    display: none;
+}

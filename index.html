@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="./mb.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav>
+        <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/78-microsoft-512.png" alt=""
+            class="logo" />
+        <button id="toggleButton">
+            <i class="fa fa-bars fa-shake"></i>
+        </button>
+        <ul id="menu" class="hidden">
+            <li><a href="page1.html">Page 1</a></li>
+            <li><a href="page2.html">Page 2</a></li>
+            <li><a href="page3.html">Page 3</a></li>
+            <li><a href="page4.html">Page 4</a></li>
+            <li><a href="page5.html">Page 5</a></li>
+            <li><a href="page6.html">Page 6</a></li>
+        </ul>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- hero start -->
+    <section></section>
+    <!-- hero end -->
+
+    <!-- footer start -->
+    <footer></footer>
+    <!-- footer end -->
+</body>
+<script>
+    $(document).ready(function () {
+        $("#toggleButton").click(function () {
+            $("#menu").toggle(0);
+        });
+    });
+</script>
+
+</html>
