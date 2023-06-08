@@ -5,15 +5,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" media="screen and (min-width: 768px)" href="./main.css" />
+    <link rel="stylesheet" media="screen and (min-width: 700px)" href="./main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" media="screen and (max-width: 767px)" href="./mb.css">
+    <link rel="stylesheet" media="screen and (max-width: 700px)" href="./mb.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <title>Document</title>
 </head>
 
@@ -37,7 +39,9 @@
     <!-- navbar end -->
 
     <!-- hero start -->
-    <section></section>
+    <section>
+        <h2>Dev. Gaurav Jatt</h2>
+    </section>
     <!-- hero end -->
 
     <!-- footer start -->
@@ -50,6 +54,27 @@
             $("#menu").toggle(0);
         });
     });
+
 </script>
 
+<script>
+    var screenWidth = window.innerWidth;
+
+    if (screenWidth < 700) {
+      $(document).ready(function() {
+        $("#menu").draggable();
+      });
+    } else {
+      // Define behavior for screen width less than or equal to 700 pixels
+      // For example, you can disable dragging or apply alternative functionality
+    }
+  </script>
+<style>
+    h2{
+    text-align: center;
+    padding-top: 45%;
+    letter-spacing: 1px;
+    font-size: x-large;
+}
+</style>
 </html>
